@@ -17,7 +17,7 @@ This project is a Dynamic Website Builder that generates YouTube-style video car
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 
 ---
 
