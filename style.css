@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+.container{
+    background-color: rgb(50, 50, 50);
+    height: max-content;
+    width: 80vw;
+    margin: 10px auto;
+    border-radius: 15px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 10px; */
+}
+.thumbnail{
+    background-color: aliceblue;
+    width: 246px;
+    height: 138px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.duration{
+    background-color: black;
+    margin: 10px;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: white;
+}
+.info{
+    margin: 20px 0;
+    width: calc(100% - 246px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-info{
+    color: rgb(158, 157, 157);
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+@media(max-width: 550px){
+    .container {
+    flex-direction: column; /* Stack thumbnail and info vertically */
+  }
+  .info {
+    width: 100%;
+    margin: 10px;
+  }
+  .thumbnail {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Keeps nice video aspect */
+  }
+}
